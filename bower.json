@@ -1,0 +1,26 @@
+{
+  "name": "angular-formly-templates-material",
+  "version": "0.0.0",
+  "authors": [
+    "ShMcK <me@ShMcK.com>)"
+  ],
+  "description": "Angular-Formly templates for Angular-Material",
+  "main": "./src/modules/angular-formly-templates-material",
+  "keywords": [
+    "angular-formly",
+    "angular-material",
+    "material-design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.4",
+    "angular-formly": "~3.0.2"
+  }
+}

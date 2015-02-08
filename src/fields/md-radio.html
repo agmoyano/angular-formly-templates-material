@@ -1,0 +1,7 @@
+<md-radio-group ng-model="model[options.key]">
+	<md-radio-button ng-repeat="(key, option) in options.templateOptions.options track by $index"
+	                 ng-value="{{::option.value}}"
+	                 aria-label="{{ ::option.label }}">
+		{{::option.label}}
+	</md-radio-button>
+</md-radio-group>
