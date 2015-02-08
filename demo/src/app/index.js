@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('demo', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial'])
+angular.module('demoApp', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
