@@ -1,3 +1,5 @@
-<md-switch ng-model="model[options.key]" aria-label="{{::options.label}}">
+<md-switch ng-model="model[options.key]"
+           aria-label="{{::options.label}}"
+	ng-class="::options.templateOptions.className || ''">
 	{{::options.label}}
 </md-switch>

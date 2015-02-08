@@ -1,4 +1,9 @@
-<md-slider ng-model="model[options.key]"
-           min="{{::options.templateOptions.min}}"
-           max="{{::options.templateOptions.max}}">
-</md-slider>
+<div>
+	<md-slider ng-model="model[options.key]"
+	           min="{{::options.templateOptions.min}}"
+	           max="{{::options.templateOptions.max}}"
+	           step="{{::options.templateOptions.step}}"
+	           aria-label="{{::options.templateOptions.label}}"
+	           id="{{(::options.templateOptions.color || 'blue') + '-slider'">
+	</md-slider>
+</div>
