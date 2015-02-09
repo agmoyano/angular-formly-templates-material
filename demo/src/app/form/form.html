@@ -6,12 +6,12 @@
     </span>
   </md-toolbar>
 
-  <div layout="row" layout-align="space-around">
+  <div layout="row" layout-align="space-around" style="padding-left:5px">
     <!-- main -->
     <div flex="60">
       <br>
       <section>
-        <md-subheader>
+        <md-subheader class="md-primary">
           <h3>Examples</h3>
         </md-subheader>
 
@@ -21,7 +21,7 @@
               <formly-form model="vm.formData" fields="vm.formFields"
                            ng-submit="vm.submit()" name="form">
                 <br/>
-                <button type="submit">Submit</button>
+                <md-button type="submit" md-no-ink class="md-raised md-primary">Submit</md-button>
               </formly-form>
             </div>
           </md-contents>

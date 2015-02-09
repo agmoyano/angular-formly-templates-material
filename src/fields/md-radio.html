@@ -2,7 +2,7 @@
 <md-radio-group ng-model="model[options.key]">
 	<md-radio-button ng-repeat="(key, option) in options.templateOptions.options"
 	                 value="{{::option.value}}"
-	                 aria-label="{{ ::option.templateOptions.label }}">
+	                 aria-label="{{::option.templateOptions.label}}">
 		{{::option.templateOptions.label}}
 	</md-radio-button>
 </md-radio-group>

@@ -29,6 +29,13 @@
           label: 'Switch (md-warn)',
           className: 'md-warn'
         }
+      }, {
+        key: 'disabledSwitch',
+        type: 'md-switch',
+        templateOptions: {
+          label: 'Switch (disabled)',
+          disabled: true
+        }
       }];
     };
   }
