@@ -1,0 +1,25 @@
+<div ng-controller="NavCtrl as vm">
+  <header ng-cloak>
+    <div>
+      <button>
+        <i></i>
+      </button>
+    </div>
+
+    <h1>
+      <a ui-sref="input" >
+        <span>Angular-Formly-Templates-Material</span>
+      </a>
+    </h1>
+
+    <nav class="main-nav main-nav--lap-and-up">
+      <ul>
+        <li ng-repeat="n in vm.navBarLinks">
+          <a href="{{n.link}}">
+            {{n.text}}</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+</div>

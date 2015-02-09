@@ -1,0 +1,37 @@
+<div>
+  <div>
+    <h1>{{::vm.contents.title}}</h1>
+    <span>{{::vm.contents.subhead}}</span>
+    <br>
+
+    <div>
+      <h2>Examples</h2>
+
+      <div>
+        <formly-form model="vm.formData" fields="vm.formFields"
+                     ng-submit="vm.submit()" name="form">
+          <br/>
+          <button type="submit">Submit</button>
+        </formly-form>
+      </div>
+    </div>
+
+    <div class="card tc-black-2 p-">
+      <h1 class="fs-title">formData</h1>
+
+      <div class="card__content bgc-blue-200" style="max-width: 450px">
+        <pre pretty-json="vm.formData"/>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <div>
+      <h1>formData</h1>
+
+      <div>
+        <pre pretty-json="vm.formData"/>
+      </div>
+    </div>
+  </div>
+</div>
