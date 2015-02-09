@@ -9,7 +9,8 @@
       min: 10,
       max: 100,
       step: 10,
-      color: 'red' // default: 'blue'
+      color: 'red', // default: 'blue'
+      showValue: false
   }
 }
 ```

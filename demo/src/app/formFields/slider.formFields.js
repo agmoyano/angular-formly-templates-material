@@ -34,6 +34,17 @@
           step: 100,
           color: 'blue'
         }
+      }, {
+        key: 'slider3',
+        type: 'md-slider',
+        templateOptions: {
+          label: 'How much?',
+          min: 100,
+          max: 1000,
+          step: 100,
+          color: 'blue',
+          showValue: true
+        }
       }];
     };
   }
