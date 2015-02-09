@@ -11,5 +11,4 @@ demo/npm-debug.log
 demo/.editorconfig
 demo/.jshintrc
 demo/Procfile
-demo/.gitignore
 package.js
