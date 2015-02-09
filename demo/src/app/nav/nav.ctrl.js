@@ -8,15 +8,34 @@
     var vm = this;
     vm.sidebar = null;
     vm.navBarLinks = [{
-      text: 'Angular-Formly',
+      title: 'Angular-Formly',
       link: 'https://github.com/formly-js/angular-formly'
     }, {
-      text: 'Angular-Material',
+      title: 'Angular-Material',
       link: 'https://material.angularjs.org'
     }, {
-      text: 'GitHub',
+      title: 'GitHub',
       link: 'https://github.com/formly-js/angular-formly-templates-material'
     }];
+
+    vm.sidebarLinks = [{
+      state: 'input',
+      title: 'Inputs'
+    }, {
+      state: 'checkbox',
+      title: 'Checkboxes'
+    }, {
+      state: 'radio',
+      title: 'Radio buttons'
+    }, {
+      state: 'switch',
+      title: 'Switches'
+    }, {
+      state: 'slider',
+      title: 'Sliders'
+    }];
+
+
   }
 
 }());

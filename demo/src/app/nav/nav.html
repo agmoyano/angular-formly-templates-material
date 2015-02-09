@@ -1,25 +1,33 @@
-<div ng-controller="NavCtrl as vm">
-  <header ng-cloak>
-    <div>
-      <button>
-        <i></i>
-      </button>
-    </div>
+<div ng-controller="NavCtrl as vm"
+     class="site-sidenav md-sidenav-left md-whiteframe-z2">
 
-    <h1>
-      <a ui-sref="input" >
-        <span>Angular-Formly-Templates-Material</span>
+  <!-- sidenav -->
+  <md-toolbar>
+    <h1 class="md-toolbar-tools">
+      <a ng-href="/" layout="row" flex>
+        Angular-Formly-Templates-Material
       </a>
     </h1>
+  </md-toolbar>
 
-    <nav class="main-nav main-nav--lap-and-up">
-      <ul>
-        <li ng-repeat="n in vm.navBarLinks">
-          <a href="{{n.link}}">
-            {{n.text}}</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <md-content style="overflow: auto">
+    <ul class="">
+      <li class="" ng-repeat="side in vm.sidebarLinks">
+        <a ui-sref="{{::side.state}}">
+          {{::side.title}}
+        </a>
+      </li>
+    </ul>
+  </md-content>
 
 </div>
+<!-- end sidenav -->
+
+
+<!--<div class="md-toolbar-item md-tools" layout="row">-->
+<!--<div ng-repeat="link in vm.navLinks">-->
+<!--<md-button ng-href="{{::link.route}}" aria-label="{{link.title}}">-->
+<!--{{::link.title}}-->
+<!--</md-button>-->
+<!--</div>-->
+<!--</div>-->

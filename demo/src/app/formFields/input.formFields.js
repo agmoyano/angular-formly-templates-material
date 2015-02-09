@@ -7,7 +7,7 @@
 
   function inputFormFields() {
     this.contents = {
-      title: 'input',
+      title: 'Inputs',
       subhead: '',
       description: '',
       markdownFile: 'app/docs/md-input.md'

@@ -7,7 +7,7 @@
 
   function checkboxFormFields() {
     this.contents = {
-      title: 'checkbox',
+      title: 'Checkboxes',
       subhead: '',
       description: '',
       markdownFile: 'app/docs/md-checkbox.md'

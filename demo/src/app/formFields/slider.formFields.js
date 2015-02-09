@@ -7,7 +7,7 @@
 
   function sliderFormFields() {
     this.contents = {
-      title: 'slider',
+      title: 'Sliders',
       subhead: '',
       description: '',
       markdownFile: 'app/docs/md-slider.md'

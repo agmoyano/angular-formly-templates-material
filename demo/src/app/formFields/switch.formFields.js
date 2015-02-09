@@ -7,7 +7,7 @@
 
   function switchFormFields() {
     this.contents = {
-      title: 'switch',
+      title: 'Switches',
       subhead: '',
       description: '',
       markdownFile: 'app/docs/md-switch.md'

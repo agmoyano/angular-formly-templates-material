@@ -7,7 +7,7 @@
 
   function radioFormFields() {
     this.contents = {
-      title: 'radio',
+      title: 'Radio Buttons',
       subhead: '',
       description: '',
       markdownFile: 'app/docs/md-radio.md'

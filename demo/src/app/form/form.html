@@ -1,37 +1,61 @@
+<!-- main -->
 <div>
-  <div>
-    <h1>{{::vm.contents.title}}</h1>
-    <span>{{::vm.contents.subhead}}</span>
-    <br>
+  <md-toolbar>
+    <h2 class="md-toolbar-tools">
+      <span>{{::vm.contents.title}}</span>
+    </h2>
+  </md-toolbar>
 
-    <div>
-      <h2>Examples</h2>
+  <div layout="row">
 
-      <div>
-        <formly-form model="vm.formData" fields="vm.formFields"
-                     ng-submit="vm.submit()" name="form">
-          <br/>
-          <button type="submit">Submit</button>
-        </formly-form>
-      </div>
+    <!-- end main -->
+    <div layout="column">
+      <md-contents>
+        <div>
+          <h1>{{::vm.contents.title}}</h1>
+          <span>{{::vm.contents.subhead}}</span>
+          <br>
+
+          <div>
+            <h2>Examples</h2>
+
+            <div>
+              <formly-form model="vm.formData" fields="vm.formFields"
+                           ng-submit="vm.submit()" name="form">
+                <br/>
+                <button type="submit">Submit</button>
+              </formly-form>
+            </div>
+          </div>
+
+          <!-- displayed data -->
+          <div>
+            <h3>formData</h3>
+
+            <div>
+              <pre pretty-json="vm.formData"/>
+            </div>
+          </div>
+        </div>
+        <!-- markdown docs -->
+        <div class="docs">
+          <h3>Docs</h3>
+
+          <div btf-markdown ng-include="::vm.contents.markdownFile"></div>
+        </div>
+      </md-contents>
+
     </div>
 
-    <div class="card tc-black-2 p-">
-      <h1 class="fs-title">formData</h1>
-
-      <div class="card__content bgc-blue-200" style="max-width: 450px">
-        <pre pretty-json="vm.formData"/>
-      </div>
-    </div>
-
-  </div>
-  <div>
-    <div>
-      <h1>formData</h1>
-
-      <div>
-        <pre pretty-json="vm.formData"/>
-      </div>
+    <div layout="column">
+      <md-contents>
+        <div>
+          <div>
+            <h3>formFields</h3>
+            <pre pretty-json="vm.prettyJson"/>
+          </div>
+        </div>
+      </md-contents>
     </div>
   </div>
 </div>
