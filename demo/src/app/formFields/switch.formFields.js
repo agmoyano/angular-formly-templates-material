@@ -19,14 +19,14 @@
         key: 'switch1',
         type: 'md-switch',
         templateOptions: {
-          label: 'Primary switch',
+          label: 'Switch (md-primary)',
           className: 'md-primary'
         }
       }, {
         key: 'switch2',
         type: 'md-switch',
         templateOptions: {
-          label: 'Warn switch',
+          label: 'Switch (md-warn)',
           className: 'md-warn'
         }
       }];

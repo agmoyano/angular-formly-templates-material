@@ -16,16 +16,23 @@
 
     this.fields = function () {
       return [{
-        key: 'box1',
+        key: 'boxDefault',
         type: 'md-checkbox',
         templateOptions: {
-          label: 'Primary switch'
+          label: 'Checkbox (default)'
         }
       }, {
-        key: 'box2',
+        key: 'boxPrimary',
         type: 'md-checkbox',
         templateOptions: {
-          label: 'Warn switch'
+          label: 'Checkbox (md-primary)'
+        }
+      }, {
+        key: 'boxWarn',
+        type: 'md-checkbox',
+        templateOptions: {
+          label: 'Checkbox (md-warn)',
+          className: 'md-warn'
         }
       }];
     };

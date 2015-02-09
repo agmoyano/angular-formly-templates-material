@@ -19,7 +19,7 @@
         key: 'radio1',
         type: 'md-radio',
         templateOptions: {
-          label: 'Choose a number:',
+          title: 'Choose a number:',
           options: [{
             label: 'One',
             value: 1

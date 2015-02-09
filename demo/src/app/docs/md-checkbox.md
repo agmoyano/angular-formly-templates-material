@@ -1,4 +1,4 @@
-#md-checkbox
+###md-checkbox
 
 ```javascript
 {

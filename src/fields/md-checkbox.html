@@ -1,3 +1,5 @@
-<md-checkbox ng-model="model[options.key]" aria-label="{{::options.label}}">
-	{{::options.label}}
+<md-checkbox ng-model="model[options.key]"
+             aria-label="{{::options.templateOptions.label}}"
+             ng-class="::options.templateOptions.className">
+	{{::options.templateOptions.label}}
 </md-checkbox>

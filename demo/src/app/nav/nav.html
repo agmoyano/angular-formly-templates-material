@@ -1,33 +1,37 @@
 <div ng-controller="NavCtrl as vm"
-     class="site-sidenav md-sidenav-left md-whiteframe-z2">
+     class="md-whiteframe-z2" layout-fill>
 
   <!-- sidenav -->
   <md-toolbar>
     <h1 class="md-toolbar-tools">
       <a ng-href="/" layout="row" flex>
-        Angular-Formly-Templates-Material
+        AF Material Templates
       </a>
     </h1>
   </md-toolbar>
 
-  <md-content style="overflow: auto">
-    <ul class="">
-      <li class="" ng-repeat="side in vm.sidebarLinks">
-        <a ui-sref="{{::side.state}}">
-          {{::side.title}}
-        </a>
-      </li>
-    </ul>
-  </md-content>
-
+  <div layout="column" layout-margin>
+    <md-content>
+      <br>
+      <ul class="sidebar">
+        <li ng-repeat="side in vm.sidebarLinks">
+          <md-button aria-label="{{::side.title + '_button'}}"><a ui-sref="{{::side.state}}">
+            {{::side.title}}
+          </a>
+          </md-button>
+        </li>
+      </ul>
+      <md-divider></md-divider>
+      <ul class="sidebar" style="overflow: auto">
+        <li ng-repeat="link in vm.navLinks">
+          <md-button ng-href="{{::link.route}}" aria-label="{{link.title}}">
+            {{::link.title}}
+          </md-button>
+        </li>
+      </ul>
+    </md-content>
+  </div>
 </div>
 <!-- end sidenav -->
 
 
-<!--<div class="md-toolbar-item md-tools" layout="row">-->
-<!--<div ng-repeat="link in vm.navLinks">-->
-<!--<md-button ng-href="{{::link.route}}" aria-label="{{link.title}}">-->
-<!--{{::link.title}}-->
-<!--</md-button>-->
-<!--</div>-->
-<!--</div>-->

@@ -27,12 +27,8 @@
 <![endif]-->
 
 <div layout="row">
-    <div layout="column">
-      <div ng-include="'app/nav/nav.html'"></div>
-    </div>
-    <div layout="column">
-      <div ui-view="form" id="main"></div>
-    </div>
+  <div ng-include="'app/nav/nav.html'" flex="20"></div>
+  <div ui-view="form" id="main" flex="80"></div>
 </div>
 
 

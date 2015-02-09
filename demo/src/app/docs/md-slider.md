@@ -1,4 +1,4 @@
-#md-slider
+###md-slider
 
 ```javascript
 {

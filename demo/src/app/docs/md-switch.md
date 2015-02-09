@@ -1,4 +1,4 @@
-#md-switch
+###md-switch
 
 ```javascript
 {

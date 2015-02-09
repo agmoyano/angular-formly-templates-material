@@ -1,4 +1,7 @@
-<div>
+<div layout>
+	<div flex="10" layout-align="center center">
+		<span>{{::options.templateOptions.label}}</span>
+	</div>
 	<md-slider ng-model="model[options.key]"
 	           min="{{::options.templateOptions.min}}"
 	           max="{{::options.templateOptions.max}}"

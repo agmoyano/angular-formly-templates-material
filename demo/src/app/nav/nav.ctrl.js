@@ -6,8 +6,7 @@
 
   function NavCtrl() {
     var vm = this;
-    vm.sidebar = null;
-    vm.navBarLinks = [{
+    vm.navLinks = [{
       title: 'Angular-Formly',
       link: 'https://github.com/formly-js/angular-formly'
     }, {

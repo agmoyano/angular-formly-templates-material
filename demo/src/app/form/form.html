@@ -1,61 +1,67 @@
-<!-- main -->
 <div>
   <md-toolbar>
-    <h2 class="md-toolbar-tools">
-      <span>{{::vm.contents.title}}</span>
-    </h2>
+    <span class="md-toolbar-tools">
+      <h1>{{::vm.contents.title}}</h1>
+      <h4>{{::vm.contents.subhead}}</h4>
+    </span>
   </md-toolbar>
 
-  <div layout="row">
-
-    <!-- end main -->
-    <div layout="column">
-      <md-contents>
-        <div>
-          <h1>{{::vm.contents.title}}</h1>
-          <span>{{::vm.contents.subhead}}</span>
+  <div layout="row" layout-align="space-around">
+    <!-- main -->
+    <div flex="60">
+      <section class="main-content">
+        <md-divider>
+          <h3>Examples</h3>
+        </md-divider>
+        <md-contents>
           <br>
 
           <div>
-            <h2>Examples</h2>
-
-            <div>
-              <formly-form model="vm.formData" fields="vm.formFields"
-                           ng-submit="vm.submit()" name="form">
-                <br/>
-                <button type="submit">Submit</button>
-              </formly-form>
-            </div>
+            <formly-form model="vm.formData" fields="vm.formFields"
+                         ng-submit="vm.submit()" name="form">
+              <br/>
+              <button type="submit">Submit</button>
+            </formly-form>
           </div>
-
-          <!-- displayed data -->
+        </md-contents>
+      </section>
+      <!-- displayed data -->
+      <section>
+        <md-divider>
+          <h3>FormData</h3>
+        </md-divider>
+        <md-contents>
           <div>
-            <h3>formData</h3>
-
-            <div>
-              <pre pretty-json="vm.formData"/>
-            </div>
+            <pre pretty-json="vm.formData"/>
           </div>
-        </div>
-        <!-- markdown docs -->
-        <div class="docs">
+      </section>
+      </md-contents>
+      <!-- markdown docs -->
+      <section>
+        <md-divider>
           <h3>Docs</h3>
-
+        </md-divider>
+        <md-contents>
           <div btf-markdown ng-include="::vm.contents.markdownFile"></div>
-        </div>
-      </md-contents>
-
+        </md-contents>
+      </section>
     </div>
+    <!-- end main -->
+    <!-- aside -->
+    <div flex="40" >
+      <section class="main-content">
+        <md-whiteframe class="md-whiteframe-z1">
+          <md-divider>
+            <h3>FormFields</h3>
+          </md-divider>
+          <md-contents>
 
-    <div layout="column">
-      <md-contents>
-        <div>
-          <div>
-            <h3>formFields</h3>
             <pre pretty-json="vm.prettyJson"/>
-          </div>
-        </div>
-      </md-contents>
+
+          </md-contents>
+        </md-whiteframe>
+      </section>
     </div>
+    <!-- end aside -->
   </div>
 </div>
