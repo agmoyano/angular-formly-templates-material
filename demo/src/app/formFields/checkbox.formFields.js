@@ -15,7 +15,19 @@
 
 
     this.fields = function () {
-      return [];
+      return [{
+        key: 'box1',
+        type: 'md-checkbox',
+        templateOptions: {
+          label: 'Primary switch'
+        }
+      }, {
+        key: 'box2',
+        type: 'md-checkbox',
+        templateOptions: {
+          label: 'Warn switch'
+        }
+      }];
     };
   }
 

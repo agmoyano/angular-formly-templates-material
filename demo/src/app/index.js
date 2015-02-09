@@ -3,8 +3,9 @@
 
   angular.module('demo', [
     /* angular-formly-templates-material dependencies */
-    'formly',
     'ngMaterial',
+    'formly',
+    'formlyMaterial',
     /* additional */
     'ngAnimate',
     'ngTouch',
@@ -18,7 +19,7 @@
     .config(routerSetup);
 
   function routerSetup($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/input');
   }
 
 }());
