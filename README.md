@@ -3,7 +3,7 @@ angular-formly-templates-material
 
 Angular-Material Templates for Angular-Formly. Modern & flexible forms configured easily in a JSON object.
 
-# Currently Under Progressgi
+# Currently Under Progress
 
 # Setup
 ## Dependencies
