@@ -9,51 +9,61 @@
   <div layout="row" layout-align="space-around">
     <!-- main -->
     <div flex="60">
-      <section class="main-content">
-        <md-divider>
+      <br>
+      <section>
+        <md-subheader>
           <h3>Examples</h3>
-        </md-divider>
-        <md-contents>
-          <br>
+        </md-subheader>
 
-          <div>
-            <formly-form model="vm.formData" fields="vm.formFields"
-                         ng-submit="vm.submit()" name="form">
-              <br/>
-              <button type="submit">Submit</button>
-            </formly-form>
-          </div>
-        </md-contents>
+        <md-whiteframe class="md-whiteframe-z1">
+          <md-contents>
+            <div class="main-content">
+              <formly-form model="vm.formData" fields="vm.formFields"
+                           ng-submit="vm.submit()" name="form">
+                <br/>
+                <button type="submit">Submit</button>
+              </formly-form>
+            </div>
+          </md-contents>
+        </md-whiteframe>
       </section>
+
+      <br>
       <!-- displayed data -->
-      <section>
-        <md-divider>
-          <h3>FormData</h3>
-        </md-divider>
-        <md-contents>
-          <div>
-            <pre pretty-json="vm.formData"/>
-          </div>
+      <md-subheader>
+        <h3>FormData</h3>
+      </md-subheader>
+      <section layout layout-align="center center">
+        <md-whiteframe class="md-whiteframe-z1">
+          <md-contents>
+            <div class="main-content">
+              <pre pretty-json="vm.formData"/>
+            </div>
+          </md-contents>
+        </md-whiteframe>
       </section>
-      </md-contents>
-      <!-- markdown docs -->
+
+      <md-subheader>
+        <h3>Docs</h3>
+      </md-subheader>
       <section>
-        <md-divider>
-          <h3>Docs</h3>
-        </md-divider>
-        <md-contents>
-          <div btf-markdown ng-include="::vm.contents.markdownFile"></div>
-        </md-contents>
+        <md-whiteframe class="md-whiteframe-z1">
+          <md-contents>
+            <div btf-markdown ng-include="::vm.contents.markdownFile" class="main-content"></div>
+          </md-contents>
+        </md-whiteframe>
+
       </section>
     </div>
     <!-- end main -->
     <!-- aside -->
-    <div flex="40" >
+    <div flex="40">
+      <md-subheader>
+        <h3>FormFields</h3>
+      </md-subheader>
       <section class="main-content">
         <md-whiteframe class="md-whiteframe-z1">
-          <md-divider>
-            <h3>FormFields</h3>
-          </md-divider>
+
           <md-contents>
 
             <pre pretty-json="vm.prettyJson"/>
