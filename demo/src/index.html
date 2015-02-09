@@ -25,7 +25,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ui-view></div>
+    <div>
+      <div ng-include="'app/nav/nav.html'"></div>
+      <!--<div ng-include="'app/header/header.html'"></div>-->
+      <div ui-view="form" id="main"></div>
+    </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
